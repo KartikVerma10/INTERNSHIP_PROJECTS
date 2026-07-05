@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Crop Recommendation</title>
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+</head>
+
+<body>
+
+    <!-- Navbar -->
+
+    <nav class="navbar">
+
+        <div class="logo">
+            🌾 Smart Farmer
+        </div>
+
+        <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="/crop">Crop Prediction</a></li>
+            <li><a href="/fertilizer">Fertilizer Prediction</a></li>
+        </ul>
+
+    </nav>
+
+    <!-- Form Container -->
+
+    <div class="container">
+
+        <div class="glass">
+
+            <h1>
+
+                <i class="fa-solid fa-seedling"></i>
+
+                Crop Recommendation
+
+            </h1>
+
+            <p class="subtitle">
+
+                Enter the soil and weather parameters to predict the most suitable crop.
+
+            </p>
+
+            <form action="/predict_crop" method="POST">
+
+                <div class="grid">
+
+                    <div class="input-group">
+                        <label><i class="fa-solid fa-leaf"></i> Nitrogen (N)</label>
+                        <input type="number" name="N" placeholder="Enter Nitrogen" required>
+                    </div>
+
+                    <div class="input-group">
+                        <label><i class="fa-solid fa-leaf"></i> Phosphorus (P)</label>
+                        <input type="number" name="P" placeholder="Enter Phosphorus" required>
+                    </div>
+
+                    <div class="input-group">
+                        <label><i class="fa-solid fa-leaf"></i> Potassium (K)</label>
+                        <input type="number" name="K" placeholder="Enter Potassium" required>
+                    </div>
+
+                    <div class="input-group">
+                        <label><i class="fa-solid fa-temperature-half"></i> Temperature (°C)</label>
+                        <input type="number" step="0.01" name="temperature" placeholder="Enter Temperature" required>
+                    </div>
+
+                    <div class="input-group">
+                        <label><i class="fa-solid fa-droplet"></i> Humidity (%)</label>
+                        <input type="number" step="0.01" name="humidity" placeholder="Enter Humidity" required>
+                    </div>
+
+                    <div class="input-group">
+                        <label><i class="fa-solid fa-flask"></i> Soil pH</label>
+                        <input type="number" step="0.01" name="ph" placeholder="Enter Soil pH" required>
+                    </div>
+
+                    <div class="input-group">
+                        <label><i class="fa-solid fa-cloud-rain"></i> Rainfall (mm)</label>
+                        <input type="number" step="0.01" name="rainfall" placeholder="Enter Rainfall" required>
+                    </div>
+
+                </div>
+
+                <button type="submit" class="predict-btn">
+
+                    <i class="fa-solid fa-seedling"></i>
+
+                    Predict Crop
+
+                </button>
+
+            </form>
+
+            <br>
+
+            <a href="/" class="back-btn">
+
+                <button class="home-btn">
+
+                    <i class="fa-solid fa-house"></i>
+
+                    Back to Home
+
+                </button>
+
+            </a>
+
+        </div>
+
+    </div>
+
+</body>
+
+</html>
