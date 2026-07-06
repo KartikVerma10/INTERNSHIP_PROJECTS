@@ -337,13 +337,13 @@ pip install -r requirements.txt
 
 # 👨‍💻 Author
 
-**Manas Sharma**
+**Kartik Verma**
 
 Engineering Student | Machine Learning Enthusiast
 
-**GitHub:** https://github.com/ManasDevHub00
+**GitHub:** https://github.com/KartikVerma10
 
-**LinkedIn:** https://www.linkedin.com/in/manas-sharma-68883b32a/
+**LinkedIn:** https://www.linkedin.com/in/kartik-verma-47252532a
 
 ---
 
