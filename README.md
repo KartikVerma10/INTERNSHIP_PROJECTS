@@ -227,7 +227,7 @@ http://127.0.0.1:5000/
 
 # 👨‍💻 Author
 
-## **Manas Sharma**
+## **Kartik Verma**
 
 **Engineering Student | Machine Learning Enthusiast**
 
@@ -238,12 +238,11 @@ http://127.0.0.1:5000/
 
 ### GitHub
 
-https://github.com/ManasDevHub00
+https://github.com/KartikVerma10
 
 ### LinkedIn
 
-https://www.linkedin.com/in/manas-sharma-68883b32a/
-
+https://www.linkedin.com/in/kartik-verma-47252532a 
 ---
 
 # ⭐ Support
